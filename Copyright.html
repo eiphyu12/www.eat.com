@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="logo1.png">
+	<title>About Us</title>
+	<style >
+		.font{font-style: italic;
+			font-weight: 600;}
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Montserrat", sans-serif;
+		}
+		.contact
+		{
+			position: relative;
+			min-height: 100vh;
+			padding: 50px 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: #F7F2ED;
+			background-size: cover;
+		}
+		.contact .content
+		{
+			max-width: 800px;
+			text-align: center;
+		}
+		.contact .content h2
+		{
+			font-size: 36px;
+			font-weight: 500;
+		}
+		.contact .content p
+		{
+			font-weight: 500;
+		}
+		.container
+		{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+		}
+ 		.container .info
+ 		{
+ 			width: 50%;
+ 			display: flex;
+ 			flex-direction: column;
+ 		}
+ 		.container .info .box
+ 		{
+ 			position: relative;
+ 			padding: 20px 0;
+ 			display: flex;
+ 		}
+ 		.container .info .text
+ 		{
+ 			display: flex;
+ 			margin-left: 20px;	
+ 			font-size: 16px;
+ 			flex-direction: colum;
+ 			font-weight: 300;
+ 		}
+ 		.container .info .text h3
+ 		{
+ 			font-weight: 500;
+ 			color: #00bcd4;
+ 		}
+ 		.contactform
+ 		{
+ 			width: 40%;
+ 			padding: 40px;
+ 			background: #fff;
+ 		}
+ 		.contactform h2
+ 		{
+ 			font-size: 30px;
+ 			color: #333;
+ 			font-weight: 500;
+ 		}
+ 		.contactform .inputBox
+ 		{
+ 			position: relative;
+ 			width: 100%;
+ 			margin-top: 10px;
+ 		}
+ 		.contactform .inputBox input,
+ 		.contactform .inputBox textarea
+ 		{
+ 			width: 100%;
+ 			padding: 5px 0;
+ 			font-size: 16px;
+ 			margin: 10px 0;
+ 			border: none;
+ 			border-bottom: 2px solid #333;
+ 			outline: none;
+ 			resize: none;
+ 		}
+ 		.contactform .inputBox span
+ 		{
+ 			position: absolute;
+ 			left: 0;
+ 			padding: 5px 0;
+ 			font-size: 16px;
+ 			margin: 10px 0;
+ 			pointer-events: none;
+ 			transition: 0.5s;
+ 			color: #666;
+ 		}
+ 		.contactform .inputBox input:focus ~ span,
+ 		.contactform .inputBox input:valid ~ span,
+ 		.contactform .inputBox textarea:focus ~ span,
+ 		.contactform .inputBox textarea:valid ~ span
+ 		{
+ 			color: #e91e63;
+ 			font-size: 12px;
+ 			transform: translateY(-20px);
+ 		}
+ 		.contactform .inputBox input[type="submit"]
+ 		{
+ 			width: 100px;
+ 			background: #00bcd4;
+ 			color: #fff;
+ 			border: none;
+ 			cursor: pointer;
+ 			padding: 10px;
+ 			font-size: 18px;
+ 		}
+ 		@media (max-width: 991px)
+ 		{
+ 			.contactform
+ 			{
+ 				padding: 50px;
+ 			}
+ 			.container
+ 			{
+ 				flex-direction: column;
+ 			}
+ 			.container .info
+ 			{
+ 				margin-bottom: 40px;
+ 			}
+ 			.container .info,
+ 			.contactform
+ 			{
+ 				width: 100%;
+ 			}
+ 		}
+
+
+
+	</style>
+</head>
+<body>
+	<section class="contact">
+		<div class="content">
+			<h2>About Us</h2>
+			<p><span class="font">EAT</span> is a website where you can see which store have which clothing,shoes and bags.You can choose anything you want to heart's content.There are variety of designs and colours. </p>
+		</div>
+		<div class="container">
+			<div class="info">
+				<div class="box">
+					<div class="text">
+						<h3></h3>
+						<p>Our website contain Adidas, Converse, H&M, Penshoppe, <br>
+						Charles and Keith, Calvin Klein.</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="text">
+						<h3></h3>
+						<p>We use HTML and CSS to write this page.</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="text">
+						<p>"All the photos are taken from google and also taken from their respective websites"</p>
+					</div>
+				</div>
+			</div>
+			<div class="contactform">
+				<form>
+					<h2>Please Give Us Feedback:)</h2>
+					<div class="inputBox">
+						<input type="text" name="" required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="text" name="" required="required">
+						<span>Email</span>
+					</div>
+					<div class="inputBox">
+						<textarea required="required"></textarea>
+						<span>Type your message...</span>
+					</div>
+					<div class="inputBox">
+						<input type="submit" name="" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
